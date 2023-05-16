@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>KNN Demo</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <h2 class="title">K-Nearest Neighbors Algorithm Demo</h2>
+      <div id="canvas_container"></div>
+      <div class="container_control">
+        <label>Classified as: </label>
+        <div id="classifiedLabel"></div>
+        <label for="noOfLabelInput">No. of Label : </label>
+        <input
+          id="noOfLabelInput"
+          type="range"
+          min="2"
+          max="4"
+          step="1"
+          value="4"
+        />
+        <span id="noOfLabel">0</span>
+        <label for="noOfKInput">No. of K: </label>
+        <input
+          id="noOfKInput"
+          type="range"
+          min="1"
+          max="10"
+          step="1"
+          value="5"
+        />
+        <span id="noOfK">0</span>
+        <label for="noOfDataPointInput">No. of Data Point: </label>
+        <input
+          id="noOfDataPointInput"
+          type="range"
+          min="40"
+          max="80"
+          step="10"
+          value="50"
+        />
+        <span id="noOfDataPoint">0</span>
+        <input id="randomButton" type="button" value="Random" />
+        <label for="nearestPoints"
+          ><span id="noOfNearestPoints"></span> Nearest Points:
+        </label>
+        <span id="nearestPoints"></span>
+      </div>
+    </main>
+
+    <script src="./lib/p5.min.js"></script>
+    <script src="./class/Node.js"></script>
+    <script src="./script.js"></script>
+    <!-- <script src="./algorithm.js"></script> -->
+  </body>
+</html>
